@@ -1,0 +1,45 @@
+[project]
+name = "mcp-server-tts"
+version = "0.1.0"
+description = "A Model Context Protocol server for Text-to-Speech using Kokoro."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Tony Rungee" },
+]
+keywords = ["tts", "kokoro", "mcp", "llm", "speech synthesis"]
+license = { text = "MIT" } # Or your preferred license
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License", # Or your preferred license
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "mcp>=1.0.0", # Corrected package name
+    "pydantic>=2.0.0",
+    "kokoro", # Corrected package name
+    "soundfile",
+    "numpy",
+    "torch",
+    "sounddevice" # Added for audio playback
+    # Note: Kokoro requires espeak-ng system dependency
+    # Note: sounddevice might require system libraries like PortAudio
+]
+
+[project.scripts]
+# Optional: if you want a direct executable after pip install
+# mcp-server-tts = "mcp_server_tts.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+# Optional: if you use uv for development
+# dev-dependencies = [
+#     "pyright",
+#     "pytest",
+#     "ruff",
+# ] 
