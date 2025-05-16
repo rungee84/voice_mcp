@@ -226,11 +226,3 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 
-# Removed Pydantic models (SynthesizeSpeechArgs, SynthesizeSpeechResponse)
-# Removed create_tool function and its call
-# Refactored main logic into KokoroTtsServer class
-# Implemented list_tools and call_tool handlers
-# Updated main() to use Server and stdio_server pattern
-
-# Consider adding a separate file for the new main() function
-# This file is now a mix of old and new main() functions 
