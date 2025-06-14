@@ -1,3 +1,5 @@
+Demo: https://www.youtube.com/watch?v=LxlUvTrZ93s
+
 # Interactive Voice MCP Server (Kokoro TTS + NeMo ASR)
 
 A Model Context Protocol server that provides Text-to-Speech (TTS) capabilities using Kokoro and Speech-to-Text (STT) capabilities using NVIDIA NeMo Parakeet models, enabling interactive voice dialogues.
